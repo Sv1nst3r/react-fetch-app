@@ -1,12 +1,6 @@
-import { useState, useEffect } from 'react';
-import { fetchUserPlaces } from '../http';
-
-
 
 export default function Places({ title, places, fallbackText, onSelectPlace, isLoading, loadingText }) {
-	
-
-  return (
+	return (
 		<section className='places-category'>
 			<h2>{title}</h2>
 			{isLoading && <p className='fallback-text'>{loadingText}</p>}

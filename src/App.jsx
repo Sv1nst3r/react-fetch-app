@@ -62,13 +62,12 @@ function App() {
 
 			setModalIsOpen(false);
 		},
-		[userPlaces, setUserPlaces  ]
+		[userPlaces, setUserPlaces]
 	);
 
 	function handleError() {
 		setErrorUpdatingPlaces(null);
 	}
-
 	return (
 		<>
 			<Modal open={errorUpdatingPlaces} onClose={handleError}>
